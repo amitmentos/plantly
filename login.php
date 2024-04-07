@@ -101,7 +101,7 @@ if (!empty($_GET["cropId"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Login Page</title>
+    <title>Plantly- Login Page</title>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -162,7 +162,7 @@ if (!empty($_GET["cropId"])) {
         </div>
     </div>
     <div class="logoLogIn">
-        <a href="login.php" class="logo-link" title="logo"></a>
+        <a href="login.php" id="loginLogo" class="logo-link"  title="logo"></a>
     </div>
     <div class="logIn_form">
         <h1 class="mb-4">Login</h1>
