@@ -72,7 +72,17 @@ temp = ss.get_temp()
 read_list = []
 for i in range(100):
 	read_list.append(ss.moisture_read())
-moisture = (sum(read_list) / 100)-300
 
+#moisture = (sum(read_list) / 100)-300
+read_list.sort()
+
+# Calculate the median
+n = len(read_list)
+if n % 2 == 0:
+    median = (read_list[n//2 - 1] + read_list[n//2]) / 2
+else:
+    median = read_list[n/2]
+
+moisture = median - 300
 # Update the JSON file with new sensor readings
 update_data(filename, temp, moisture)
